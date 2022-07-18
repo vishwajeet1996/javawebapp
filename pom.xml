@@ -4,10 +4,10 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>cloudops</artifactId>
-	<version>7.1.1</version>
+	<version>1.0.0</version>
 	<packaging>war</packaging>
 
-	<name>cloudops</name>
+	<name>CloudOps</name>
 	<description>CloudOps Java WebApplication Project</description>
 
 	<parent>
@@ -50,9 +50,9 @@
 	
 	
 	<scm>
-		<connection>scm:git:git@github.com:kesavkummari/staragiledevops.git</connection>
-		<developerConnection>scm:git:git@github.com:kesavkummari/staragiledevops.git</developerConnection>
-		<url>git@github.com:kesavkummari/staragiledevops.git</url>
+		<connection>scm:git:git@github.com:kesavkummari/javawebapp.git</connection>
+		<developerConnection>scm:git:git@github.com:kesavkummari/javawebapp.git</developerConnection>
+		<url>git@github.com:kesavkummari/javawebapp.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
