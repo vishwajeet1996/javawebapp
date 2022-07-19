@@ -1,4 +1,10 @@
 node {
+   def mvnHome
+   stage('Prepare') {
+      git url: '', branch: 'main'
+      mvnHome = tool 'maven'
+    }
+
     stage('Clean'){
         'mvn clean'
     }
