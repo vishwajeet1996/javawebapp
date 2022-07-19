@@ -9,21 +9,21 @@ node {
        sh '${mvnHome}/bin/mvn -Dmaven.test.failure.ignore clean'
     }
     stage('Validate'){
-        'mvn validate'
+        sh '${mvnHome}/bin/mvn -Dmaven.test.failure.ignore validate'
     }
     stage('Compile'){
-        'mvn compile'
+        sh '${mvnHome}/bin/mvn -Dmaven.test.failure.ignore compile'
     }
     stage('Test'){
-        'mvn test -DskipTests'
+        sh '${mvnHome}/bin/mvn -Dmaven.test.failure.ignore test -DskipTests'
     }
     stage('Package'){
-        'mvn package -DskipTests'
+        sh '${mvnHome}/bin/mvn -Dmaven.test.failure.ignore package -DskipTests'
     }
     stage('Verfiy'){
-        'mvn verify -DskipTests'
+        sh '${mvnHome}/bin/mvn -Dmaven.test.failure.ignore verify -DskipTests'
     }
     stage('Install'){
-        'mvn Install -DskipTests'
+        sh '${mvnHome}/bin/mvn -Dmaven.test.failure.ignore install -DskipTests'
     }
 }
