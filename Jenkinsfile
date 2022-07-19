@@ -3,7 +3,37 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                sh 'mvn clean'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'mvn validate'
+            }
+        }
+         stage('build') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'mvn test -DskipTests'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'mvn package -DskipTests'
+            }
+        }
+        stage('build') {
+            steps {
+                sh 'mvn verify -DskipTests'
+            }
+        }
+         stage('build') {
+            steps {
+                sh 'mvn install -DskipTests'
             }
         }
     }
